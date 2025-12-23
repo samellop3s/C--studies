@@ -17,5 +17,13 @@
             Console.WriteLine("O valor da variavel letra é: " + letra);
             Console.WriteLine("O valor da variavel valor é: " + valor); 
             Console.WriteLine("O valor da variavel num é: " + num);
+
+            int num1,num2,res;
+
+            num1 = 24;
+            num2 = 568;
+            res = num1 * num2;
+
+            Console.WriteLine("a soma do " + num1 + " com o " + num2 + " é igual a: " + res);
         }
     }
