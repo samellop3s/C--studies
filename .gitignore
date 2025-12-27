@@ -1,1 +1,13 @@
-./c#.sln
+# Build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+
+# Executáveis
+*.exe
+
+# Logs
+*.log
+*.out
