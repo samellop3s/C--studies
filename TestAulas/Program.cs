@@ -36,6 +36,7 @@ namespace TestAulas
             Console.WriteLine("Total da compra.........:{0,15:c}", valorVenda * quantidade);
             Console.WriteLine("-------------------");
 
+
         }
     }
 }

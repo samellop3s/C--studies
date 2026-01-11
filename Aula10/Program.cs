@@ -25,6 +25,8 @@ namespace Aula09
             string entrada = Console.ReadLine(); //recebera o valor dado pelo usuario
             DiasSemana corte = Enum.Parse<DiasSemana>(entrada); //fara a conversao do valor recebido para o enum
             Console.WriteLine("Seu corte foi marcado pro dia: " + corte); //mostrara o valor convertido
+
+            
         }
     }
 }
