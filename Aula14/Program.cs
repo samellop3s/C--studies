@@ -19,24 +19,31 @@ namespace Aula12
             n1 = int.Parse(Console.ReadLine());
 
             if (n1 >= 60)
-            { if(n1 >= 90)
+            {
+                if (n1 == 90)
                 {
                     Console.WriteLine("Aprovado com louvor");
-                }else
+                }
+                if (n1 >= 100)
+                {
+                    Console.WriteLine("Aprovado com super louvor");
+                }
+                else
                 {
                     Console.WriteLine("Aprovado");
                 }
             }
             else
             {
-                if(n1 >= 50)
+                if (n1 >= 50)
                 {
                     Console.WriteLine("Recuperação");
-                }else
+                }
+                else
                 {
                     Console.WriteLine("Reprovado");
                 }
             }
         }
     }
-}   
+}
