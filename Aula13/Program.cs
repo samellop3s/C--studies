@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace Aula12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Condicional if-else
+
+            int n1, n2, n3, n4, res;
+            res = n1 = n2 = n3 = n4 = 0;
+
+            //>= 60 Aprovado
+            //50=< 60 Recuperação
+            //< 50 Reprovado
+
+            Console.Write("Digite o valor de n1: ");
+            n1 = int.Parse(Console.ReadLine());
+
+            if (n1 < 0 || n1 > 100)
+            {
+                Console.WriteLine("Nota inválida! Digite um valor entre 0 e 100.");
+                return;
+            }else if (n1 >= 50)
+            {
+                Console.WriteLine("Aprovado");
+            }
+            else if (n1 >= 40)
+            {
+                Console.WriteLine("Recuperação");
+            }
+            else
+            {
+                Console.WriteLine("Reprovado");
+            }
+        }
+    }
+}
