@@ -6,18 +6,23 @@ namespace Aula12
     {
         static void Main(string[] args)
         {
-            //Comando condicional com if/else
-            Console.Write("Digite a nota do aluno: ");
-            int nota = int.Parse(Console.ReadLine());
+            int n1, n2, n3, n4, res;
+            res = n1 = n2 = n3 = n4 = 0;
 
-            if(nota >= 60)
-            {//se o resultado da condição for verdadeiro
-                Console.WriteLine("Aprovado");
-            }
+            Console.Write("Digite o valor de n1: ");
+            n1 = int.Parse(Console.ReadLine());
+            Console.Write("Digite o valor de n2: ");
+            n2 = int.Parse(Console.ReadLine());
+            Console.Write("Digite o valor de n3: ");
+            n3 = int.Parse(Console.ReadLine());
+            Console.Write("Digite o valor de n4: ");
+            n4 = int.Parse(Console.ReadLine());
+
+            res = (n1 + n2 + n3 + n4);
+            if (res >= 60)
+                Console.WriteLine($"A soma da notas deram o total de: {res} e o resultado é: Aprovado");
             else
-            {//se o resultado da condição for falso
                 Console.WriteLine("Reprovado");
-            }
         }
     }
 }
