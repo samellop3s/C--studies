@@ -19,12 +19,56 @@ namespace Aula15
 
             switch (escolha)
             {
-                
+                case 1:
+                    Console.WriteLine("Você escolheu viajar para a praia.");
+                    break;
+                case 2:
+                    Console.WriteLine("Você escolheu viajar para a montanha.");
+                    break;
+                case 3:
+                    Console.WriteLine("Você escolheu viajar para o campo.");
+                    break;
+                case 4:
+                    Console.WriteLine("você escolheu viajar para a cidade.");
+                    break;
+                case 5:
+                    Console.WriteLine("Você escolheu viajar para o interior.");
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida. Por favor, escolha um número entre 1 e 5.");
+                    break;
             }
 
-            switch (transporte)
+
+
+            if (escolha<0 || escolha>5)
             {
-                
+                Console.WriteLine("Não é possível determinar o modo de transporte devido à escolha inválida do local.");
+            }
+            else
+            {
+                switch (transporte)
+                {
+                    case 'a':
+                    case 'A':
+                        Console.WriteLine("Você escolheu viajar de carro.");
+                        break;
+                    case 'b':
+                    case 'B':
+                        Console.WriteLine("Você escolheu viajar de avião.");
+                        break;
+                    case 'c':
+                    case 'C':
+                        Console.WriteLine("Você escolheu viajar de trem.");
+                        break;
+                    case 'd':
+                    case 'D':
+                        Console.WriteLine("Você escolheu viajar de ônibus.");
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida. Por favor, escolha uma letra entre a, b, c ou d.");
+                        break;
+                }
             }
         }
     }
