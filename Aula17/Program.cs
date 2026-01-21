@@ -105,7 +105,7 @@ Saída invertida: [6, 5, 4, 3, 2, 1]
                 Console.Write(numeros[i] + " ");
             }*/
 
-            int [] test = {1, 2, 3, 4, 5, 6};
+          /*  int [] test = {1, 2, 3, 4, 5, 6};
 
             Console.Write("Vetor original: ");
             for (int i = 0; i < test.Length; i++)
@@ -118,7 +118,19 @@ Saída invertida: [6, 5, 4, 3, 2, 1]
             for (int i = test.Length - 1; i >= 0; i--)//nesta situação o i está iniciando do tamanho do array -1, ou seja, do último elemento.
             {
                 Console.Write(test[i] + " ");
-            } 
+
+            } */
+
+            int [] number = {10, 20, 30, 40, 50, 60};//aqui esta sendo criado um array com 6 posições, cada um com seu valor. 
+
+            Console.Write("Vetores corretos: ");
+            for (int i = 0; i < number.Length; i++) //aqui vai estar iniciando em 0 e lendo o array por inteiro.
+
+            //for seria um relogio que começa em 0  e vai contando até parar, executando o mesmo bloco de codigo a cada tic
+
+            {
+                Console.Write(number[i] + " "); //aqui esta sendo impresso o valo completo do array.
+            }
         }
     }
 }
