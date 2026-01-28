@@ -72,11 +72,30 @@ namespace Aula19
                 }
             }
             if (caçada){
-                Console.Write("vc encontrou a presa!!!");
+                Console.WriteLine("vc encontrou a presa!!!");
             }else
             {
-                Console.Write("continue tentando");
+                Console.WriteLine("continue tentando");
             }
+
+            Console.Write("==============================\n");
+            Console.WriteLine();
+            int [] numeros = {1, 2, 3, 4, 5};
+
+            int soma = 0;
+
+            foreach(int val in numeros)
+            //após fazer a criação do foreach, sempre utilizar o valor que deu (neste caso, deve ser usado o val)
+            {
+                soma += val;
+            }
+
+            double media = (double)soma / numeros.Length;
+
+            Console.WriteLine("soma: " + soma);
+            Console.WriteLine("media: " + media);
+
+            Console.Write("==============================\n");
         }
     }
 }
